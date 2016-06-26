@@ -1,0 +1,10 @@
+version: '2'
+services:
+  note:
+    image: ipython/notebook
+    volumes:
+      - "~/notebooks:/notebooks"
+    ports:
+      - 8888:8888
+    environment:
+      PASSWORD: aaaa
